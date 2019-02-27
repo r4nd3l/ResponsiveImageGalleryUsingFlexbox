@@ -1,0 +1,122 @@
+/* Default DevCorner Style Setting */
+
+:root{
+  --dc-: #28a745;
+  --gr-: #515151;
+  --shadow-: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+  --ts-: 2px 5px 2px rgba(33,33,33,0.25);
+}
+
+.fa-code{
+  color: var(--dc-);
+}
+
+/* .center{
+  width: 50%;
+  margin: 0 auto;
+} */
+
+.brand{
+  margin: 0;
+  padding: 0.5em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--gr-);
+  font-family: Roboto;
+  z-index: 1;
+  font-size: 3em;
+  text-shadow: var(--ts-);
+}
+
+.slogan{
+  margin: 0;
+  padding: 0.5em;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--gr-);
+  font-family: Roboto;
+  font-size: 1.2em;
+  text-shadow: var(--ts-);
+}
+
+body{
+  margin: 0;
+  background: url(../img/img_05.jpeg) no-repeat 50% 50%;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+header{
+  margin: 0.5vw;
+  font-size: 0;
+  display: -ms-flexbox;
+  -ms-flexbox-wrap: wrap;
+  -ms-flexbox-direction: column;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  display: -wekbit-box;
+  display: flex;
+}
+
+header div{
+  -webkit-box-flex: auto;
+  -ms-flex: auto;
+  flex: auto;
+  width: 200px;
+  margin: 0.5vw;
+}
+
+header div img{
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: var(--shadow-);
+}
+
+@media screen and (max-width: 1063px){
+  body{
+    background: #ccc;
+  }
+}
+
+@media screen and (max-width: 1274px){
+  .brand,
+  .slogan{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 400px){
+  header div{
+    margin: 3px;
+  }
+  header{
+    padding: 0;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* End */
